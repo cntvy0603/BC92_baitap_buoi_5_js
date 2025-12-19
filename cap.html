@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>TÍNH TIỀN CÁP</h2>
+
+  <div>
+    <label>Mã khách hàng</label>
+    <input type="text" id="maKhachHang" />
+  </div>
+
+  <br />
+
+  <div>
+    <label>Loại khách hàng</label>
+    <select id="loaiKhachHang" onchange="xuLyLoaiKhachHang()">
+      <option value="">-- Chọn loại --</option>
+      <option value="N">Nhà dân</option>
+      <option value="D">Doanh nghiệp</option>
+    </select>
+  </div>
+
+  <br />
+
+  <div id="divKetNoi">
+    <label>Số kết nối</label>
+    <input type="number" id="soKetNoi" disabled />
+  </div>
+
+  <br />
+
+  <div>
+    <label>Số kênh cao cấp</label>
+    <input type="number" id="soKenhCaoCap" />
+  </div>
+
+  <br />
+
+  <button onclick="tinhTienCap()">Tính tiền</button>
+
+  <br /><br />
+
+  <h3 id="ketQua"></h3> 
+
+
+
+
+<script src="./cap.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>QUẢN LÝ QUYỂN SINH</h3>
+
+    <div>
+      <label for="">Điểm chuẩn</label><br />
+      <input type="number" id="diemChuan" />
+    </div>
+    <br />
+
+    <div>
+      <label for="">Điểm 1</label><br />
+      <input type="number" id="diem1" />
+    </div>
+    <br />
+    <div>
+      <label for="">Điểm 2</label><br />
+      <input type="number" id="diem2" />
+    </div>
+    <br />
+    <div>
+      <label for="">Điểm 3</label><br />
+      <input type="number" id="diem3" />
+    </div>
+    <br />
+    <div>
+      <label
+        >Khu vực ưu tiên:
+        <select id="khuVuc">
+          <option value="X">X</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+      </label>
+    </div>
+    <br />
+
+    <div>
+      <label>
+        Đối tượng ưu tiên:
+        <select id="doiTuong">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+    </div>
+    <br />
+    <button onclick="tinhTongDiem()">Nhập vào đây</button>
+
+    <p id="pKetQua"></p>
+
+    <script src="./QLTS.js"></script>
+  </body>
+</html>
